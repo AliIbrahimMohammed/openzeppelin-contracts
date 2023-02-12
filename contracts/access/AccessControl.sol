@@ -176,12 +176,7 @@ abstract contract AccessControl is Context, IAccessControl, ERC165 {
      *
      * May emit a {RoleRevoked} event.
      */
-    function renounceRole(bytes32 role, address account) public virtual override {
-        require(account == _msgSender(), "AccessControl: can only renounce roles for self");
-
-        _revokeRole(role, account);
-    }
-
+///////////////////////////////////////////
     /**
      * @dev Grants `role` to `account`.
      *
